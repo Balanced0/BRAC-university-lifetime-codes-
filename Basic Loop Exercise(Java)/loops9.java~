@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class loops9{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int i = 1;
+        int hcf = 1;
+        if(a > b){
+            while(i < a){
+                if(a%i == 0 && b%i == 0){
+                    hcf = hcf + i;
+                }
+                i++;
+            }
+        }else{
+            while(i < b){
+                if(a%i == 0 && b%i == 0){
+                    hcf = hcf + i;
+                }
+                i++;
+        }
+    }
+}
