@@ -1,0 +1,14 @@
+public class loops13{
+    public static void main(String[] args){
+        int i = 1;
+        int a;
+        int b;
+        while(i <= 500){
+            a = i%10;
+            b = i/10;
+            
+            i++;
+        }
+        
+    }
+}
