@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class loops12{
+    public static void main(String[] args){
+        Scanner sc  = new Scanner(System.in);
+        int new_a = 0;
+        int smallest = 0;
+        int greatest = 0;
+        while(true){
+            System.out.println("Enter a number");
+            int a = sc.nextInt();
+            new_a = a;
+            if(){
+            }
+        }
+    }
+}
