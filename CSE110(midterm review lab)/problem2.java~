@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class problem2{
+    public static void main(String[] args){
+       Scanner sc = new Scanner(System.in);
+       int a = sc.nextInt();
+       int b = sc.nextInt();
+       double hot_dog = 4.0;
+       double x_salad = 4.50;
+       double x-bacon = 5.0;
+       double toast = 2.0;
+       double soda = 1.50;
+       if(a == 1){
+           System.out.println("Item: Hot Dog");
+           System.out.println("Quantity: " + b);
+           System.out.println("Total: $ " + (hot_dog * b);        
+       }
+    }
+}
