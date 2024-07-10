@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class problem7{
+    public static void main(String[] args){
+        Scanner sc = new Scanner;
+        int n = sc.nextInt();
+        int i = 1;
+        int y = 0;
+        while(i <= n){
+            if(i%2 != 0){
+                if(i%2 == 0){
+                    y = y - i;
+                }
+                else{
+                    y = y  + 1;
+                }
+            }
+            i++;
+        }
+        System.out.println(y);
+    }
+}
