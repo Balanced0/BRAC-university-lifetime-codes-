@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class problem3{
     public static void main(String[] args){
+        //Read the four integer values corresponding to the x and y axes of two points, p1 (x1, y1) and p2 (x2, y2) and calculate the distance between them. Also, show whether the slope created from this line is positive or negative or zero.
        Scanner sc = new Scanner(System.in);
        double x1 = sc.nextDouble();
        double y1 = sc.nextDouble();

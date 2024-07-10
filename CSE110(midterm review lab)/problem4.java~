@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class problem4{
+    public static void main(String[] args){
+       Scanner sc = new Scanner(System.in);
+       double A = sc.nextDouble();
+       double B = sc.nextDouble();
+       double C = sc.nextDouble();
+       double x1 = (-B + Math.sqrt((B * B) - 4*A*C))/2*A;
+       double x2 = (-B - Math.sqrt((B * B) - 4*A*C))/2*A;
+    }
+}
