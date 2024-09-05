@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class task8{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Start: ");
+        int s = sc.nextInt();
+        System.out.print("End: ");
+        int n = sc.nextInt();
+        
+        System.out.println("Armstrong numbers:");
+        for(int i = s; i<= n; i++){
+            int orgi = i;
+            int sum = 0;
+            while(i > 0){
+                int a = i%10;
+                i/10;
+                int b = a * a * a;
+                sum = sum + b;
+            }
+            if(orgi == sum){
+                System.out.println(orgi);
+            }
+        }
+    }
+}
