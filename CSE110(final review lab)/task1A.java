@@ -6,6 +6,8 @@ public class task1A{
         evenChecker(a);
         boolean result = isEven(a);
         System.out.println(result);
+        result = isPos(a);
+        System.out.println(result);
     }
     
     public static void evenChecker(int num){
@@ -19,6 +21,15 @@ public class task1A{
     
     public static boolean isEven(int num){
         if(num%2 == 0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    
+    public static boolean isPos(int num){
+        if(num > 0){
             return true;
         }
         else{
