@@ -4,6 +4,8 @@ public class task1A{
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         evenChecker(a);
+        boolean result = isEven(a);
+        System.out.println(result);
     }
     
     public static void evenChecker(int num){
@@ -12,6 +14,15 @@ public class task1A{
         }
         else{
             System.out.println("Odd!!");
+        }
+    }
+    
+    public static boolean isEven(int num){
+        if(num%2 == 0){
+            return true;
+        }
+        else{
+            return false;
         }
     }
 }
