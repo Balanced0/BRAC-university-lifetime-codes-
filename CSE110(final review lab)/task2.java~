@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class task2{
+    public static void main(String[] args){
+        double area = circleArea(5);
+        System.out.println(area);
+    }
+    
+    public static int circleArea(int r){
+        double a = 3.1416 * r * r;
+        return a;
+    }
+}
