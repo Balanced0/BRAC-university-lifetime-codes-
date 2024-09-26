@@ -5,9 +5,8 @@ public class task2{
         String s = sc.nextLine();
         String rev = "";
         for(int i = s.length() - 1; i >= 0; i--){
-            int a = s.codePointAt(i);
-            char c = (char) a;
-            rev = rev + c;
+            char a = s.charAt(i);
+            rev = rev + a;
         }
         if(s.equals(rev)){
             System.out.println("true");
