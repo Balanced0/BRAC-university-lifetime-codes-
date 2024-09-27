@@ -1,0 +1,19 @@
+//Arrays
+//Task 7
+public class task10{
+    public static void main(String[] args){
+        int arr[] = {6, 13, 28, 17, 3, 9, 11, 23, 10, 29, 12, 7};
+        for(int i = 0; i < arr.length; i++){
+            int a = arr[i];
+            int count = 0;
+            for(int i = 0; i <=a ;i++){
+                if(a%i == 0){
+                    count++;
+                }
+            }
+            if(count == 2){
+                System.out.println(i + ": " + arr[i]);
+            }
+        }
+    }
+}
