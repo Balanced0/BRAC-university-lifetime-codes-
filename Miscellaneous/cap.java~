@@ -1,0 +1,20 @@
+//This is Java. Programming is fun! Hey do you like programming?
+public class cap{
+    public static void main(String[] args){
+        String s = "This is Java. programming is fun! hey do you like programming?";
+        String fs = "";
+        for(int i = 0; i < s.length(); i++){
+            char c = s.charAt(i);
+            char cb = s.charAt(i - 1);
+            char cbb = s.charAt(i - 2);
+            if((cbb >= 33 && cbb <= 47) || (cbb >= 58 && cbb <= 64)){
+                c = c - 32;
+                fs = fs + c;
+            }
+            else{
+                fs = fs + c;
+            }
+        }
+        System.out.println(fs);
+    }
+}
