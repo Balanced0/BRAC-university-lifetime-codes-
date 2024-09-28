@@ -1,0 +1,11 @@
+public class mod{
+    public static void main(String[] args){
+        int a = 523;
+        int fact = 1;
+        for(int i = 1; i <= a; i++){
+            fact = fact * i;
+        }
+        int modd = fact%33;
+        System.out.println(mod);
+    }
+}
