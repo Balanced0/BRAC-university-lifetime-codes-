@@ -1,0 +1,19 @@
+public class task4{
+    public static void main(String[] args){
+        int matrix[][] = {{1, 2, 3}, {2, 1, 4}, {3, 4, 1}};
+        int row = matrix.length;
+        int col = matrix[0].length;
+        int transpose[][] = int new[col][row];
+        for(int i = 0; i < row; i++){
+            for(int j = 0; j < col; j++){
+                transpose[j][i] = matrix[i][j];
+            }
+        }
+        if(transpose[][] == matrix[][]){
+            System.out.println("True");
+        }
+        else{
+            System.out.println("False");
+        }
+    }
+}
