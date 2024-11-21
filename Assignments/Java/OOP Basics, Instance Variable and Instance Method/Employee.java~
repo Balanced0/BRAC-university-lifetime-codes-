@@ -1,0 +1,42 @@
+public class Employee{
+    public String name;
+    public float salary;
+    public String designation;
+    public void newEmployee(int name){
+        this.name = name;
+        this.salary = 30000.0;
+        this.designation = "junior";
+    }
+    public void displayInfo(){
+        System.out.println("Employee Name: " + this.name);
+        System.out.println("Employee Salary: " + this.salary + " Tk");
+        System.out.println("Employee Designation: " + this.designation);
+    }
+    public void calculateTax(){
+        if(this.salary > 50000.0){
+            float tax = this.salary * (30.0/100);
+            System.out.println(this.name + " Tax Amount: " + tax + " Tk");
+        }
+        else if(this.salary > 30000.0 && this.salary < 50000.0){
+            float tax = this.salary * (10.0/100);
+            System.out.println(this.name + " Tax Amount: " + tax + " Tk");
+        }
+        else{
+            System.out.println("No need to pay tax");
+        }
+    }
+    public void promoteEmployee(String designation){
+        this.designation = designation;
+        System.out.println(this.name + " has been promoted to " + this.designation);
+        if(this.designation.equals("senior")){
+            this.salary = this.salary + 25000.0;
+            System.out.println("New Salary: " + this.salary + " Tk");
+        }
+        else if(this.designation.equals("lead")){
+            this.salary = this.salary + 50000.0;
+        }
+        else if(this.designation.equals("manager")){
+            this.salary = this.salary + 75000.0;
+        }
+    }
+}
