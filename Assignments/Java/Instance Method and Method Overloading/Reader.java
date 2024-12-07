@@ -1,0 +1,36 @@
+public class Reader{
+    public String name = "New user";
+    public int capacity = 0;
+    public String arr[];
+    public int count = 0;
+    public String createReader(String name, int capacity){
+        this.name = name;
+        this.capacity = capacity;
+        arr = new String[this.capacity];
+        return "A new reader is created!";
+    }
+    public void addBook(String book){
+        if(this.count < this.capacity){
+            arr[this.count] = book;
+        }
+        else{
+            System.out.println("No more capacity");
+        }
+        this.count = this.count + 1;
+    }
+    public void readerInfo(){
+        System.out.println("Name: " + this.name);
+        System.out.println("Capacity: " + this.capacity);
+        System.out.println("Books: ");
+        for(int i = 0; i < this.capacity; i++){
+            if(arr[i] == null){
+                if(i < 1){
+                    System.out.println("No books added yet");
+                }
+            }
+            else{
+                System.out.println("Book " + (i+1) + ": " + arr[i]);
+            }
+        }
+    }
+}

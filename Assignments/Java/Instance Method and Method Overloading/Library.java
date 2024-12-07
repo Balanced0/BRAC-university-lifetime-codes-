@@ -1,0 +1,28 @@
+public class Library{
+    public int capacity;
+    public int books;
+    public String arr[];
+    public void setBookCapacity(int c){
+        this.capacity = c;
+        this.arr = new String[c];
+    }
+    public void addBook(String book){
+        if(this.books >= this.capacity){
+            System.out.println("Maximum capacity exceeds. You can't add more than " + this.capacity + " books");
+        }
+        else{
+            this.arr[this.books] = book;
+            this.books = this.books + 1;
+            System.out.println("Book '" + book + "' added to the library");
+        }
+        
+    }
+    public void printDetail(){
+        System.out.println("Maximum Capacity: " + this.capacity);
+        System.out.println("Total Books: " + this.books);
+        System.out.println("Book list: ");
+        for(int i = 0; i < this.books; i++){
+            System.out.println(arr[i]);
+        }
+    }
+}

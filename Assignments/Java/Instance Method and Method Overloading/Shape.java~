@@ -1,0 +1,37 @@
+public class Shape{
+    public String shape;
+    public float r;
+    public float h;
+    public float b;
+    public void setParameters(String shape, int r){
+        this.shape = shape;
+        this.r = r;
+    }
+    public void setParameters(String shape, int h, int b){
+        this.shape = shape;
+        this.h = h;
+        this.b = b;
+    }
+    public void setParameters(String shape, int h, int b){
+        this.shape = shape;
+        this.h = h;
+        this.b = b;
+    }
+    public void setParameters(String shape, float b, float h){
+        this.b = b;
+        this.h = h;
+    }
+    public String details(){
+        float a;
+        if(this.shape.equals("Circle")){
+            float a = 3.14 * this.r * this.r;
+        }
+        else if(this.shape.equals("Triangle")){
+            float a = 0.5 * b * h;
+        }
+        else if(this.shape.equals("Rectangle")){
+            float a = b * h;
+        }
+    }
+    return "Shape Name: " + this.shape + "\nArea: " + float;
+}

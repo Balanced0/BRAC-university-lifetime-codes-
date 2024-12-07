@@ -1,0 +1,20 @@
+public class Shelf{
+    public int shelf_capa;
+    public int num_of_books;
+    public void addBooks(int i){
+        if(this.shelf_capa == 0){
+            System.out.println("Zero capacity. Cannot add books.");
+        }
+        else if(i + this.num_of_books > this.shelf_capa){
+            System.out.println("Exceeds capacity");
+        }
+        else if(i + this.num_of_books < this.shelf_capa){
+            this.num_of_books = i + this.num_of_books;
+            System.out.println(i + " books added to shelf");
+        }
+    }
+    public void showDetails(){
+        System.out.println("Shelf capacity: " + this.shelf_capa);
+        System.out.println("Number of books: " + this.num_of_books);
+    }
+}
