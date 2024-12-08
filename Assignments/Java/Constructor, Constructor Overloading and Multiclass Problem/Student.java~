@@ -1,0 +1,20 @@
+public class Student{
+    public int id;
+    public double cgpa;
+    public String course[];
+    public int index = 0;
+    public Student(int id){
+        this.id = id;
+        System.out.println("A student with ID " + id + " has been created.");
+    }
+    public Student(int id, double cgpa){
+        this.id = id;
+        this.cgpa = cgpa;
+        System.out.println("A student with ID " + id + " and cgpa " + cgpa + " has been created.");
+    }
+    public void addCourse(String course){
+        if(this.cgpa == 0){
+            System.out.println("Failed to add " + course + " Set CG first");
+        }
+    }
+}
