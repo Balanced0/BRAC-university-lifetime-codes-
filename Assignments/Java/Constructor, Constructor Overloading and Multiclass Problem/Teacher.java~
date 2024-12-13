@@ -1,0 +1,9 @@
+public class Teacher{
+    public String name;
+    public String initial;
+    public Teacher(String name, String initial){
+        this.name = name;
+        this.initial = initial;
+        System.out.println("A new teacher has been created");
+    }
+}

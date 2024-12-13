@@ -1,0 +1,8 @@
+public class Usis{
+    public Usis(){
+        System.out.println("Usis is ready to use!");
+    }
+    public void login(Student s){
+        
+    }
+}

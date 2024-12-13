@@ -1,0 +1,18 @@
+public class BracuBus{
+    public String route;
+    public int max = 2;
+    public int count = 0;
+    public BracuBus(String route){
+        this.route  = route;
+    }
+    public BracuBus(String route, int max){
+        this.route  = route;
+        this.max = max;
+    }
+    public void showDetails(){
+        System.out.println("Bus Route: " + route);
+        System.out.println("Passenger Count: " + count + " (Max: " + max + ")");
+        System.out.println("Passengers on Board:");
+        for(){}
+    }
+}
