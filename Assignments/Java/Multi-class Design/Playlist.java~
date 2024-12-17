@@ -1,0 +1,37 @@
+public class Playlist{
+    public String playlist_number;
+    public Song head;
+    public Song tail;
+    public Playlist(String playlist_number){
+        this.playlist_number = playlist_number;
+        System.out.println(playlist_number + " created");
+    }
+    public void info(){
+        System.out.println(playlist_number + " has the following songs:");
+        if(head == null){
+            System.out.println("No songs in First Playlist.");
+        }
+        else{
+            Song temp = head;
+            int n = 1;
+            while(temp != null){
+                System.out.println("Song-" + n);
+                temp.songInfo();
+                temp = temp.nextSong;
+                n++;
+            }
+        }
+    }
+    public void addSong(Song s){
+        if(head == null){
+            head = s;
+            tail = s;
+            System.out.println(s.title + " added to " + playlist_number);
+        }
+        else{
+            tail.nextSong = s;
+            tail = s;
+            System.out.println(s.title + " added to " + playlist_number);
+        }
+    }
+}
