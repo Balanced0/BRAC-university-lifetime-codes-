@@ -1,0 +1,17 @@
+public class Passenger{
+    public static int no_of_passenger = 0;
+    public static double total_fare = 0.0;
+    public String name;
+    public Passenger(String name, double distance){
+        this.name = name;
+        Passenger.total_fare = Passenger.total_fare + (distance * 20);
+        Passenger.no_of_passenger++;
+    }
+    public void storeBaggageWeight(double baggageWeight){
+        Passenger.total_fare = Passenger.total_fare + (baggageWeight * 10);
+    }
+    public void passengerDetails(){
+        System.out.println("Name: " + name);
+        System.out.println("Fare: " + Passenger.total_fare + " TK");
+    }
+}
