@@ -1,0 +1,16 @@
+public class Manager extends Employee{
+    public int bonus;
+    public double finalSalary;
+    public Manager(String name, double baseSalary, int hoursWorked, int bonus){
+        super(name, baseSalary, hoursWorked);
+        this.bonus = bonus;
+    }
+    public void calculateSalary(){
+        super.displayInfo();
+        if(hoursWorked > 40){
+            System.out.println("Bonus: " + bonus + ".0%");
+            finalSalary = baseSalary + (baseSalary * (bonus/100.0));
+        }
+        System.out.println("Final Salary: $" + finalSalary);
+    }
+}

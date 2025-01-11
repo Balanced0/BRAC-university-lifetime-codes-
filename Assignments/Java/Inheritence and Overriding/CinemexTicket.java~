@@ -1,0 +1,37 @@
+public class CinemexTicket extends MovieTicket{
+    private static int total_tickets = 0;
+    public String genre;
+    public String seat_type = "Regular";
+    public CinemexTicket(String movie, String showtime, String genre, String date){
+        super(movie, date, showtime, seatPrices[0]);
+        this.genre = genre;
+        total_tickets++;
+    }
+    public int getTotalTickets(){
+        return total_tickets;
+    }
+    public void calculateTicketPrice(){
+        double price = 0;
+        public String time[] = showtime.split(":");
+        public String hour = time[0];
+        for(int i = 0; i < seatTypes.length; i++){
+            if(seat_type.equals(seatTypes[i])){
+                if(hours >= 18 && hours <= 23){
+                    price = getPrice() + (getPrice() * nightShowCharge/100.0);
+                }
+                else{
+                    price = getPrice();
+                }
+            }
+        }
+        setPrice(price);
+    }
+    public String toString() {
+        System.out.println("Ticket ID: " + movie + "-" + seat_type[0] + "-" + getTotalTickets());
+        super.toString()
+        System.out.println("Genre: " + genre);
+        System.out.println("Seat Type: " + seat_type);
+        System.out.println("Price(tk): " + getPrice());
+        System.out.println("Status: " );
+    }
+}

@@ -1,0 +1,7 @@
+public class Vehicle2010 extends Vehicle{
+    public Vehicle2010(){
+        x = 0;
+        y = 0;
+    }
+    super.toString();
+}

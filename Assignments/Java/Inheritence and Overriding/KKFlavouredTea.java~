@@ -1,0 +1,15 @@
+public class KKFlavouredTea extends KKTea{
+    public static String name;
+    public KKFlavouredTea(String name, int price, int tea_bags){
+        super(price, tea_bags);
+        this.name = name;
+    }
+    public void productDetail(){
+        super.productDetail();
+        System.out.println("Weight: " + (tea_bags * 2) + ", Tea Bags: " + tea_bags);
+    }
+    public static void updateSoldStatusFlavoured(KKFlavouredTea location){
+        location.status = true;
+        total_sales++;
+    }
+}

@@ -1,0 +1,4 @@
+public class ComplexNumber extends RealNumber{
+    super(1.0);
+    return toString() + "ImaginaryPart: " + RealNumber;
+}

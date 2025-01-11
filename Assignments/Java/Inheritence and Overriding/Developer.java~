@@ -1,0 +1,7 @@
+public class Developer{
+    public String language;
+    public Developer(String name, double baseSalary, int hoursWorked, String language){
+        super(name, baseSalary, hoursWorked);
+        this.language = language;
+    }
+}
