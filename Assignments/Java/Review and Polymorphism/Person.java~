@@ -1,0 +1,23 @@
+public class Person{
+    public String name;
+    public int age;
+    public String type;
+    public int count = 0;
+    public Person(String name, int age, String type){
+        this.name = name;
+        this.age = age;
+        this.type = type;
+    }
+    public void pushVaccine(Vaccine v){
+        if(count <= 2){
+            System.out.println("1st dose done for " + name);
+        }
+        else{
+            System.out.println("Sorry " + name +", you already received both doses.");
+        }
+    }
+    public void showDetail(){
+        System.out.println("Name: " + name + "Age: " + age + " Type: " + student);
+        System.out.println("Vaccine name: " + );
+    }
+}

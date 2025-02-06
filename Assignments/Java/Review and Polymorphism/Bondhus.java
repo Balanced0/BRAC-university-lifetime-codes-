@@ -1,0 +1,37 @@
+public class Bondhus extends SocialMedia{
+    public String name;
+    public int count = 0;
+    public String arr[] = new String[4];
+    public Bondhus(String name, String email){
+        super(name, email);
+        this.name = name;
+    }
+    public void showSentbox(){
+        if(count < 4){
+            System.out.println(name + "'s Sentbox: ");
+            if(count == 0){
+                System.out.println("No sent messages");
+            }
+            else{
+                for(int i = 0; i < count; i++){
+                    System.out.println(arr[i]);
+                }
+            }
+        }
+        else{
+            for(int i = 0; i < count; i++){
+                    System.out.println(arr[i]);
+                }
+            System.out.println("Sendbox is full");
+        }
+    }
+    public void sendMessage(String text){
+        if(count < 4){
+            arr[count] = text;
+            count++;
+        }
+    }
+    public String toString(){
+        return super.toString() + "\nMessages Sent: " + count;
+    }
+}

@@ -1,0 +1,8 @@
+public class Vaccine{
+    private String vac_name;
+    private int sec_dose;
+    public Vaccine(String vac_name, String country, String sec_dose){
+        this.vac_name = vac_name;
+        this.sec_dose = sec_dose;
+    }
+}
